@@ -4,109 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マルチスクロールLP</title>
-  <link rel="stylesheet" type="text/css" href="jquery.multiscroll.css" />		
-	<link rel="stylesheet" type="text/css" href="examples.css" />		
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.easings.min.js"></script>
-	<script type="text/javascript" src="jquery.multiscroll.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-             $('#myContainer').multiscroll({
-               sectionsColor: ['#4d6dff', '#4dffd5', '#ff893b'],
-               anchors: ['first', 'second', 'third'],
-               menu: '#menu',
-               easing: 'easeOutBack'
-             });
-         });
-     </script>
- 
-   <style>
-     .ms-section{
-       text-align: center;
-     }
- 
-     #menu li {
-       display:inline-block;
-       margin: 10px;
-       color: #000;
-       background:#fff;
-       background: rgba(255,255,255, 0.3);
-       -webkit-border-radius: 10px; 
-                 border-radius: 10px; 
-     }
-     #menu li.active{
-       background:#666;
-       background: rgba(255,255,255, 1);
-       color: #000;
-     }
-     #menu li a{
-       text-decoration:none;
-       color: #000;
-     }
-     #menu li.active a:hover{
-       color: #000;
-     }
-     #menu li:hover{
-       background: rgba(255,255,255, 0.8);
-     }
-     #menu li a,
-     #menu li.active a{
-       padding: 9px 18px;
-       display:block;
-     }
-     #menu li.active a{
-       color: #000;
-     }
-     #menu{
-       position:fixed;
-       top:0;
-       left:0;
-       height: 40px;
-       z-index: 70;
-       width: 100%;
-       padding: 0;
-       margin:0;
-     }
-   </style>
- 
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-  <ul id="menu">
-    <li data-menuanchor="first"><a href="#first">最初のインパクト</a></li>
-    <li data-menuanchor="second"><a href="#second">LPに刺激を！</a></li>
-    <li data-menuanchor="third"><a href="#third">詳しくは・・</a></li>
-  </ul>
-  
-  <div id="myContainer">
-  
+  <div id="multiscroll">
     <div class="ms-left">
-      <div class="ms-section" id="left1">
-        <h1>あなたのコンテンツは注目されてますか？</h1>
-      </div>
-  
-      <div class="ms-section" id="left2">
-        <h1>やり方を変えた方が・・</h1>
-      </div>
-  
-      <div class="ms-section" id="left3">
-        <h1>詳しくは・・</h1>
-      </div>
+      <div class="ms-section"><p>左セクション1</p></div>
+      <div class="ms-section"><p>左セクション2</p></div>
+      <div class="ms-section"><p>左セクション3</p></div>
     </div>
-    
     <div class="ms-right">
-      <div class="ms-section" id="right1">
-        <h1>もし、違うなら・・・</h1>
-      </div>
-  
-      <div class="ms-section" id="right2">
-        <h1>いいかもしれませんね！</h1>
-      </div>
-  
-      <div class="ms-section" id="right3">
-        <h1><a href="https://www.facebook.com/digitalcommunicationcocei">メッセージを・・！</a></h1>
-      </div>
-    </div>	
-  </div>
+      <div class="ms-section"><p>右セクション1</p></div>
+      <div class="ms-section"><p>右セクション2</p></div>
+      <div class="ms-section"><p>右セクション3</p></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
+<script src="jquery.easings.min.js"></script>
+<script src="jquery.multiscroll.min.js"></script>
+<script src="multiscroll_set.js"></script>
 </body>
 </html>
